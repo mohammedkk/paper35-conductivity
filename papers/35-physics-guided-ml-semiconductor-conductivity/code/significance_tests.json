@@ -1,0 +1,182 @@
+{
+  "Ensemble (weighted by validation RMSE) vs Gradient-Boosted Trees [rmse_log10]": {
+    "a_mean": 0.5934538866057879,
+    "b_mean": 0.6556054408878284,
+    "diff_mean": -0.06215155428204043,
+    "diff_std": 0.34132438643125157,
+    "t_stat": -0.4071642865456449,
+    "t_p": 0.7047343201160554,
+    "w_stat": 7.0,
+    "w_p": 1.0
+  },
+  "Ensemble (weighted by validation RMSE) vs Gradient-Boosted Trees [r2]": {
+    "a_mean": 0.9046918116697826,
+    "b_mean": 0.9085483903856153,
+    "diff_mean": -0.0038565787158327813,
+    "diff_std": 0.08900352600890861,
+    "t_stat": -0.0968902307119584,
+    "t_p": 0.9274740991876643,
+    "w_stat": 7.0,
+    "w_p": 1.0
+  },
+  "Ensemble (weighted by validation RMSE) vs Gradient-Boosted Trees [extrapolation_rmse]": {
+    "a_mean": 0.822297928463611,
+    "b_mean": 1.1660877942803731,
+    "diff_mean": -0.343789865816762,
+    "diff_std": 0.4863701453180556,
+    "t_stat": -1.5805606436618451,
+    "t_p": 0.18913252745178138,
+    "w_stat": 2.0,
+    "w_p": 0.1875
+  },
+  "Ensemble (simple average) vs Gradient-Boosted Trees [rmse_log10]": {
+    "a_mean": 0.6297627865239083,
+    "b_mean": 0.6556054408878284,
+    "diff_mean": -0.02584265436392008,
+    "diff_std": 0.34156252352457,
+    "t_stat": -0.16918112467511415,
+    "t_p": 0.8738651314257746,
+    "w_stat": 7.0,
+    "w_p": 1.0
+  },
+  "Ensemble (simple average) vs Gradient-Boosted Trees [extrapolation_rmse]": {
+    "a_mean": 0.9372382498621725,
+    "b_mean": 1.1660877942803731,
+    "diff_mean": -0.2288495444182006,
+    "diff_std": 0.423166597711949,
+    "t_stat": -1.2092711019863762,
+    "t_p": 0.2931442074006301,
+    "w_stat": 3.0,
+    "w_p": 0.3125
+  },
+  "Ensemble (weighted by validation RMSE) vs Ensemble (simple average) [rmse_log10]": {
+    "a_mean": 0.5934538866057879,
+    "b_mean": 0.6297627865239083,
+    "diff_mean": -0.03630889991812034,
+    "diff_std": 0.01872025210929589,
+    "t_stat": -4.336969819163794,
+    "t_p": 0.012282166949586013,
+    "w_stat": 0.0,
+    "w_p": 0.0625
+  },
+  "Ensemble (weighted by validation RMSE) vs Ensemble (simple average) [extrapolation_rmse]": {
+    "a_mean": 0.822297928463611,
+    "b_mean": 0.9372382498621725,
+    "diff_mean": -0.1149403213985614,
+    "diff_std": 0.1312467092217497,
+    "t_stat": -1.9582538375770995,
+    "t_p": 0.12179828519689165,
+    "w_stat": 2.0,
+    "w_p": 0.1875
+  },
+  "Ensemble (weighted by validation RMSE) vs Ensemble (stacked, Ridge) [rmse_log10]": {
+    "a_mean": 0.5934538866057879,
+    "b_mean": 0.6475286683262679,
+    "diff_mean": -0.05407478172047995,
+    "diff_std": 0.15361733393465168,
+    "t_stat": -0.7871174736497705,
+    "t_p": 0.4752309453428515,
+    "w_stat": 5.0,
+    "w_p": 0.625
+  },
+  "Ensemble (weighted by validation RMSE) vs Ensemble (stacked, Ridge) [extrapolation_rmse]": {
+    "a_mean": 0.822297928463611,
+    "b_mean": 1.1209010213382955,
+    "diff_mean": -0.29860309287468445,
+    "diff_std": 0.3804447690495562,
+    "t_stat": -1.7550426981229021,
+    "t_p": 0.15410604233509725,
+    "w_stat": 2.0,
+    "w_p": 0.1875
+  },
+  "PGML (2-channel) vs PGML (2-channel + RCN) [rmse_log10]": {
+    "a_mean": 0.7973691823113394,
+    "b_mean": 0.7689333104994178,
+    "diff_mean": 0.02843587181192144,
+    "diff_std": 0.07345405538309455,
+    "t_stat": 0.8656369214647942,
+    "t_p": 0.43552058051655573,
+    "w_stat": 5.0,
+    "w_p": 0.625
+  },
+  "PGML (2-channel) vs PGML (2-channel + RCN) [extrapolation_rmse]": {
+    "a_mean": 1.303841107159675,
+    "b_mean": 1.6365408409774755,
+    "diff_mean": -0.33269973381780027,
+    "diff_std": 0.7305137438968173,
+    "t_stat": -1.0183781306348234,
+    "t_p": 0.36608309685212836,
+    "w_stat": 4.0,
+    "w_p": 0.4375
+  },
+  "PGML (2-channel) + GBT residual vs Gradient-Boosted Trees [extrapolation_rmse]": {
+    "a_mean": 1.100011624176895,
+    "b_mean": 1.1660877942803731,
+    "diff_mean": -0.06607617010347808,
+    "diff_std": 0.423407543086505,
+    "t_stat": -0.34895648520373623,
+    "t_p": 0.7447165872868753,
+    "w_stat": 6.0,
+    "w_p": 0.8125
+  },
+  "PGML (2-channel) + GBT residual vs Gradient-Boosted Trees [rmse_log10]": {
+    "a_mean": 0.7470404360364842,
+    "b_mean": 0.6556054408878284,
+    "diff_mean": 0.09143499514865577,
+    "diff_std": 0.429668009938948,
+    "t_stat": 0.4758438141666842,
+    "t_p": 0.659008744303169,
+    "w_stat": 4.0,
+    "w_p": 0.4375
+  },
+  "Ensemble (10 models, simple average) vs Ensemble (simple average) [rmse_log10]": {
+    "a_mean": 0.6335798950858055,
+    "b_mean": 0.6297627865239083,
+    "diff_mean": 0.0038171085618972757,
+    "diff_std": 0.02465929238881173,
+    "t_stat": 0.34612973021769944,
+    "t_p": 0.7466846958904704,
+    "w_stat": 5.0,
+    "w_p": 0.625
+  },
+  "Ensemble (10 models, simple average) vs Ensemble (simple average) [extrapolation_rmse]": {
+    "a_mean": 0.9641208957567382,
+    "b_mean": 0.9372382498621725,
+    "diff_mean": 0.026882645894565904,
+    "diff_std": 0.04834483817879152,
+    "t_stat": 1.24338866153606,
+    "t_p": 0.28162206365735265,
+    "w_stat": 3.0,
+    "w_p": 0.3125
+  },
+  "Ensemble (10 models, stacked Ridge) vs Ensemble (stacked, Ridge) [rmse_log10]": {
+    "a_mean": 0.6451953373457989,
+    "b_mean": 0.6475286683262679,
+    "diff_mean": -0.0023333309804689064,
+    "diff_std": 0.01636488714467754,
+    "t_stat": -0.3188220389305665,
+    "t_p": 0.7658156067893669,
+    "w_stat": 6.0,
+    "w_p": 0.8125
+  },
+  "Ensemble (10 models, stacked Ridge) vs Ensemble (stacked, Ridge) [extrapolation_rmse]": {
+    "a_mean": 1.0362055092773912,
+    "b_mean": 1.1209010213382955,
+    "diff_mean": -0.08469551206090456,
+    "diff_std": 0.19180269260363578,
+    "t_stat": -0.9873944926764074,
+    "t_p": 0.3793469925684527,
+    "w_stat": 4.0,
+    "w_p": 0.875
+  },
+  "Gradient-Boosted Trees vs Random Forest [rmse_log10]": {
+    "a_mean": 0.6556054408878284,
+    "b_mean": 0.7038637908924064,
+    "diff_mean": -0.048258350004577955,
+    "diff_std": 0.11573204558805092,
+    "t_stat": -0.9324033852846282,
+    "t_p": 0.40391092997733635,
+    "w_stat": 5.0,
+    "w_p": 0.625
+  }
+}

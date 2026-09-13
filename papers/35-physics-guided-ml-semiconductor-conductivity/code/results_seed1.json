@@ -1,0 +1,876 @@
+{
+  "PGML (2-channel)": {
+    "rmse_log10": 0.7899121835924872,
+    "r2": 0.8790783133110553,
+    "consistency_violation": 0.0,
+    "n_checkable_curves": 4,
+    "extrapolation_rmse": 2.064121155682572
+  },
+  "PGML (2-channel + RCN)": {
+    "rmse_log10": 0.7859402669978081,
+    "r2": 0.8802913173395125,
+    "consistency_violation": 0.0,
+    "n_checkable_curves": 4,
+    "extrapolation_rmse": 2.022895812334994
+  },
+  "PGML (RCN only, no 2-channel)": {
+    "rmse_log10": 0.8009295951763764,
+    "r2": 0.8756816450483867,
+    "consistency_violation": 0.0,
+    "n_checkable_curves": 4,
+    "extrapolation_rmse": 2.0833612781533497
+  },
+  "PGML (no correction)": {
+    "rmse_log10": 0.7491545936849405,
+    "r2": 0.8912349245993813,
+    "consistency_violation": 0.0,
+    "n_checkable_curves": 4,
+    "extrapolation_rmse": 2.0851993329602347
+  },
+  "Black-box MLP": {
+    "rmse_log10": 0.7465501768852345,
+    "r2": 0.8919898480884283,
+    "consistency_violation": 0.0,
+    "n_checkable_curves": 4,
+    "extrapolation_rmse": 0.7816871039988743
+  },
+  "Residual-only PINN": {
+    "rmse_log10": 0.7709287095681415,
+    "r2": 0.8848205474743197,
+    "consistency_violation": 0.0,
+    "n_checkable_curves": 4,
+    "extrapolation_rmse": 0.7375408474652455
+  },
+  "Random Forest": {
+    "rmse_log10": 0.5966111088109366,
+    "r2": 0.9310190386346763,
+    "consistency_violation": 0.0,
+    "n_checkable_curves": 4,
+    "extrapolation_rmse": 1.2190447913810818
+  },
+  "Gradient-Boosted Trees": {
+    "rmse_log10": 0.4395427528708044,
+    "r2": 0.9625588810678813,
+    "consistency_violation": 0.0,
+    "n_checkable_curves": 4,
+    "extrapolation_rmse": 1.425283426193765
+  },
+  "PGML (2-channel) + GBT residual": {
+    "rmse_log10": 0.7476415038012966,
+    "r2": 0.8916738330485863,
+    "consistency_violation": NaN,
+    "n_checkable_curves": 0,
+    "extrapolation_rmse": 1.4675010544043414
+  },
+  "GBT + physics-parameter features": {
+    "rmse_log10": 1.2299941736641464,
+    "r2": 0.7068076192747732,
+    "consistency_violation": NaN,
+    "n_checkable_curves": 0,
+    "extrapolation_rmse": 1.7990410754944373
+  },
+  "Ensemble (simple average)": {
+    "rmse_log10": 0.60675792066796,
+    "r2": 0.928652710271404,
+    "consistency_violation": NaN,
+    "n_checkable_curves": 0,
+    "extrapolation_rmse": 1.329300603051405
+  },
+  "Ensemble (stacked, Ridge)": {
+    "rmse_log10": 0.44982866139759514,
+    "r2": 0.9607860294185117,
+    "consistency_violation": NaN,
+    "n_checkable_curves": 0,
+    "extrapolation_rmse": 1.5956414911623165,
+    "stacked_weights": {
+      "PGML (2-channel)": 0.032783025139458605,
+      "PGML (2-channel + RCN)": 0.0015969948516721885,
+      "PGML (RCN only, no 2-channel)": 0.0,
+      "PGML (no correction)": 0.0,
+      "Black-box MLP": 0.04341456409983749,
+      "Residual-only PINN": 0.0,
+      "Random Forest": 0.25794443559084196,
+      "Gradient-Boosted Trees": 0.6884561605111551
+    },
+    "stacked_weights_extrapolation": {
+      "PGML (2-channel)": 0.0,
+      "PGML (2-channel + RCN)": 0.0,
+      "PGML (RCN only, no 2-channel)": 0.0,
+      "PGML (no correction)": 0.0,
+      "Black-box MLP": 0.011843025869338664,
+      "Residual-only PINN": 0.0,
+      "Random Forest": 0.3289935428706967,
+      "Gradient-Boosted Trees": 0.7547938084018443
+    }
+  },
+  "Ensemble (weighted by validation RMSE)": {
+    "rmse_log10": 0.5487894151175597,
+    "r2": 0.941634256263433,
+    "consistency_violation": NaN,
+    "n_checkable_curves": 0,
+    "extrapolation_rmse": 1.0259204845294214,
+    "validation_weights": {
+      "PGML (2-channel)": 0.09330831441405357,
+      "PGML (2-channel + RCN)": 0.09322374341612183,
+      "PGML (RCN only, no 2-channel)": 0.08893600677947743,
+      "PGML (no correction)": 0.08058831786259239,
+      "Black-box MLP": 0.12182328359191788,
+      "Residual-only PINN": 0.11479005263873202,
+      "Random Forest": 0.18453379297692585,
+      "Gradient-Boosted Trees": 0.22279648832017906
+    },
+    "validation_weights_extrapolation": {
+      "PGML (2-channel)": 0.05366568844919108,
+      "PGML (2-channel + RCN)": 0.0536875843650403,
+      "PGML (RCN only, no 2-channel)": 0.05196679335017176,
+      "PGML (no correction)": 0.05193510273288819,
+      "Black-box MLP": 0.16551092223289451,
+      "Residual-only PINN": 0.1552350223226924,
+      "Random Forest": 0.19927749843893716,
+      "Gradient-Boosted Trees": 0.2687213881081846
+    }
+  },
+  "Ensemble (10 models, simple average)": {
+    "rmse_log10": 0.6368041728805881,
+    "r2": 0.921411613437019,
+    "consistency_violation": NaN,
+    "n_checkable_curves": 0,
+    "extrapolation_rmse": 1.3812262208508719
+  },
+  "Ensemble (10 models, stacked Ridge)": {
+    "rmse_log10": 0.44995120953550477,
+    "r2": 0.960764660154661,
+    "consistency_violation": NaN,
+    "n_checkable_curves": 0,
+    "extrapolation_rmse": 1.1678598694116464,
+    "stacked_weights": {
+      "PGML (2-channel)": 0.004218292473259553,
+      "PGML (2-channel + RCN)": 0.005897553655422336,
+      "PGML (RCN only, no 2-channel)": 0.0,
+      "PGML (no correction)": 0.0,
+      "Black-box MLP": 0.04446440285707655,
+      "Residual-only PINN": 0.0,
+      "Random Forest": 0.2604567988748663,
+      "Gradient-Boosted Trees": 0.6848001884258414,
+      "PGML (2-channel) + GBT residual": 0.02367628410167598,
+      "GBT + physics-parameter features": 0.0
+    },
+    "stacked_weights_extrapolation": {
+      "PGML (2-channel)": 0.0,
+      "PGML (2-channel + RCN)": 0.0,
+      "PGML (RCN only, no 2-channel)": 0.0,
+      "PGML (no correction)": 0.0,
+      "Black-box MLP": 0.1729454249091066,
+      "Residual-only PINN": 0.1362860247824458,
+      "Random Forest": 0.28194990942306386,
+      "Gradient-Boosted Trees": 0.42297269381514135,
+      "PGML (2-channel) + GBT residual": 0.0568196247482224,
+      "GBT + physics-parameter features": 0.02365874509518709
+    }
+  },
+  "Ensemble (10 models, weighted by validation RMSE)": {
+    "rmse_log10": 0.5716000950678589,
+    "r2": 0.9366814215303889,
+    "consistency_violation": NaN,
+    "n_checkable_curves": 0,
+    "extrapolation_rmse": 1.1170676160687478,
+    "validation_weights": {
+      "PGML (2-channel)": 0.07872191314154985,
+      "PGML (2-channel + RCN)": 0.07865056268585591,
+      "PGML (RCN only, no 2-channel)": 0.0750331055149339,
+      "PGML (no correction)": 0.06799036719119106,
+      "Black-box MLP": 0.10277928617363317,
+      "Residual-only PINN": 0.09684552346794051,
+      "Random Forest": 0.15568658927807558,
+      "Gradient-Boosted Trees": 0.18796787737430012,
+      "PGML (2-channel) + GBT residual": 0.08053033015707853,
+      "GBT + physics-parameter features": 0.07579444501544151
+    },
+    "validation_weights_extrapolation": {
+      "PGML (2-channel)": 0.044891631775995394,
+      "PGML (2-channel + RCN)": 0.044909947825227337,
+      "PGML (RCN only, no 2-channel)": 0.04347049705444188,
+      "PGML (no correction)": 0.043443987685737984,
+      "Black-box MLP": 0.13845076044853208,
+      "Residual-only PINN": 0.12985491591049877,
+      "Random Forest": 0.16669667975343205,
+      "Gradient-Boosted Trees": 0.22478686016873045,
+      "PGML (2-channel) + GBT residual": 0.07970141877382945,
+      "GBT + physics-parameter features": 0.08379330060357447
+    }
+  },
+  "_per_curve_rmse": {
+    "PGML (2-channel)": [
+      {
+        "curve_id": "CdSe_Nd0e+00",
+        "material": "CdSe",
+        "sse": 10.39705593177093,
+        "n": 15
+      },
+      {
+        "curve_id": "CdSe_Nd1e+17",
+        "material": "CdSe",
+        "sse": 0.7261432559715931,
+        "n": 25
+      },
+      {
+        "curve_id": "CdSe_Nd1e+19",
+        "material": "CdSe",
+        "sse": 0.44084298280008216,
+        "n": 25
+      },
+      {
+        "curve_id": "Ge_Nd0e+00",
+        "material": "Ge",
+        "sse": 25.360304299482,
+        "n": 23
+      },
+      {
+        "curve_id": "Ge_Nd1e+17",
+        "material": "Ge",
+        "sse": 0.7038215315186752,
+        "n": 25
+      },
+      {
+        "curve_id": "Ge_Nd1e+19",
+        "material": "Ge",
+        "sse": 0.3538114750671741,
+        "n": 25
+      },
+      {
+        "curve_id": "PbTe_Nd0e+00",
+        "material": "PbTe",
+        "sse": 84.06459214640768,
+        "n": 25
+      },
+      {
+        "curve_id": "PbTe_Nd1e+17",
+        "material": "PbTe",
+        "sse": 10.376763664317146,
+        "n": 25
+      },
+      {
+        "curve_id": "PbTe_Nd1e+19",
+        "material": "PbTe",
+        "sse": 0.4804126214770438,
+        "n": 25
+      }
+    ],
+    "PGML (2-channel + RCN)": [
+      {
+        "curve_id": "CdSe_Nd0e+00",
+        "material": "CdSe",
+        "sse": 10.277648311232989,
+        "n": 15
+      },
+      {
+        "curve_id": "CdSe_Nd1e+17",
+        "material": "CdSe",
+        "sse": 0.7159420336047843,
+        "n": 25
+      },
+      {
+        "curve_id": "CdSe_Nd1e+19",
+        "material": "CdSe",
+        "sse": 0.44537233330477816,
+        "n": 25
+      },
+      {
+        "curve_id": "Ge_Nd0e+00",
+        "material": "Ge",
+        "sse": 25.802919280085,
+        "n": 23
+      },
+      {
+        "curve_id": "Ge_Nd1e+17",
+        "material": "Ge",
+        "sse": 0.767375570120328,
+        "n": 25
+      },
+      {
+        "curve_id": "Ge_Nd1e+19",
+        "material": "Ge",
+        "sse": 0.3339484165179524,
+        "n": 25
+      },
+      {
+        "curve_id": "PbTe_Nd0e+00",
+        "material": "PbTe",
+        "sse": 82.3587404592767,
+        "n": 25
+      },
+      {
+        "curve_id": "PbTe_Nd1e+17",
+        "material": "PbTe",
+        "sse": 10.425294115340227,
+        "n": 25
+      },
+      {
+        "curve_id": "PbTe_Nd1e+19",
+        "material": "PbTe",
+        "sse": 0.4433074809860115,
+        "n": 25
+      }
+    ],
+    "PGML (RCN only, no 2-channel)": [
+      {
+        "curve_id": "CdSe_Nd0e+00",
+        "material": "CdSe",
+        "sse": 11.811855599364993,
+        "n": 15
+      },
+      {
+        "curve_id": "CdSe_Nd1e+17",
+        "material": "CdSe",
+        "sse": 1.108691220202677,
+        "n": 25
+      },
+      {
+        "curve_id": "CdSe_Nd1e+19",
+        "material": "CdSe",
+        "sse": 0.5191469746254791,
+        "n": 25
+      },
+      {
+        "curve_id": "Ge_Nd0e+00",
+        "material": "Ge",
+        "sse": 25.021903478487936,
+        "n": 23
+      },
+      {
+        "curve_id": "Ge_Nd1e+17",
+        "material": "Ge",
+        "sse": 1.1996871350647993,
+        "n": 25
+      },
+      {
+        "curve_id": "Ge_Nd1e+19",
+        "material": "Ge",
+        "sse": 0.4100861810916738,
+        "n": 25
+      },
+      {
+        "curve_id": "PbTe_Nd0e+00",
+        "material": "PbTe",
+        "sse": 87.25495251053746,
+        "n": 25
+      },
+      {
+        "curve_id": "PbTe_Nd1e+17",
+        "material": "PbTe",
+        "sse": 9.078555416618299,
+        "n": 25
+      },
+      {
+        "curve_id": "PbTe_Nd1e+19",
+        "material": "PbTe",
+        "sse": 0.2321115834676453,
+        "n": 25
+      }
+    ],
+    "PGML (no correction)": [
+      {
+        "curve_id": "CdSe_Nd0e+00",
+        "material": "CdSe",
+        "sse": 24.879832227968034,
+        "n": 15
+      },
+      {
+        "curve_id": "CdSe_Nd1e+17",
+        "material": "CdSe",
+        "sse": 8.23834835363942,
+        "n": 25
+      },
+      {
+        "curve_id": "CdSe_Nd1e+19",
+        "material": "CdSe",
+        "sse": 1.5902781037808282,
+        "n": 25
+      },
+      {
+        "curve_id": "Ge_Nd0e+00",
+        "material": "Ge",
+        "sse": 17.453739130917352,
+        "n": 23
+      },
+      {
+        "curve_id": "Ge_Nd1e+17",
+        "material": "Ge",
+        "sse": 9.899845549822448,
+        "n": 25
+      },
+      {
+        "curve_id": "Ge_Nd1e+19",
+        "material": "Ge",
+        "sse": 0.8504029627770923,
+        "n": 25
+      },
+      {
+        "curve_id": "PbTe_Nd0e+00",
+        "material": "PbTe",
+        "sse": 32.84061522108238,
+        "n": 25
+      },
+      {
+        "curve_id": "PbTe_Nd1e+17",
+        "material": "PbTe",
+        "sse": 23.741133100226275,
+        "n": 25
+      },
+      {
+        "curve_id": "PbTe_Nd1e+19",
+        "material": "PbTe",
+        "sse": 0.048350265746064915,
+        "n": 25
+      }
+    ],
+    "Black-box MLP": [
+      {
+        "curve_id": "CdSe_Nd0e+00",
+        "material": "CdSe",
+        "sse": 9.420359390705936,
+        "n": 15
+      },
+      {
+        "curve_id": "CdSe_Nd1e+17",
+        "material": "CdSe",
+        "sse": 12.732474217044446,
+        "n": 25
+      },
+      {
+        "curve_id": "CdSe_Nd1e+19",
+        "material": "CdSe",
+        "sse": 1.0915607787006711,
+        "n": 25
+      },
+      {
+        "curve_id": "Ge_Nd0e+00",
+        "material": "Ge",
+        "sse": 24.710283566397933,
+        "n": 23
+      },
+      {
+        "curve_id": "Ge_Nd1e+17",
+        "material": "Ge",
+        "sse": 4.487336066343359,
+        "n": 25
+      },
+      {
+        "curve_id": "Ge_Nd1e+19",
+        "material": "Ge",
+        "sse": 0.8364884024565779,
+        "n": 25
+      },
+      {
+        "curve_id": "PbTe_Nd0e+00",
+        "material": "PbTe",
+        "sse": 50.478873701110075,
+        "n": 25
+      },
+      {
+        "curve_id": "PbTe_Nd1e+17",
+        "material": "PbTe",
+        "sse": 13.806774773604705,
+        "n": 25
+      },
+      {
+        "curve_id": "PbTe_Nd1e+19",
+        "material": "PbTe",
+        "sse": 1.1486655910071744,
+        "n": 25
+      }
+    ],
+    "Residual-only PINN": [
+      {
+        "curve_id": "CdSe_Nd0e+00",
+        "material": "CdSe",
+        "sse": 12.349271756744104,
+        "n": 15
+      },
+      {
+        "curve_id": "CdSe_Nd1e+17",
+        "material": "CdSe",
+        "sse": 12.275676230229648,
+        "n": 25
+      },
+      {
+        "curve_id": "CdSe_Nd1e+19",
+        "material": "CdSe",
+        "sse": 1.0796112938512024,
+        "n": 25
+      },
+      {
+        "curve_id": "Ge_Nd0e+00",
+        "material": "Ge",
+        "sse": 28.78781609687095,
+        "n": 23
+      },
+      {
+        "curve_id": "Ge_Nd1e+17",
+        "material": "Ge",
+        "sse": 4.178895510063706,
+        "n": 25
+      },
+      {
+        "curve_id": "Ge_Nd1e+19",
+        "material": "Ge",
+        "sse": 0.8530638419335129,
+        "n": 25
+      },
+      {
+        "curve_id": "PbTe_Nd0e+00",
+        "material": "PbTe",
+        "sse": 52.529201556747594,
+        "n": 25
+      },
+      {
+        "curve_id": "PbTe_Nd1e+17",
+        "material": "PbTe",
+        "sse": 13.446250170929728,
+        "n": 25
+      },
+      {
+        "curve_id": "PbTe_Nd1e+19",
+        "material": "PbTe",
+        "sse": 1.0927325679827697,
+        "n": 25
+      }
+    ],
+    "Random Forest": [
+      {
+        "curve_id": "CdSe_Nd0e+00",
+        "material": "CdSe",
+        "sse": 14.241828691853025,
+        "n": 15
+      },
+      {
+        "curve_id": "CdSe_Nd1e+17",
+        "material": "CdSe",
+        "sse": 0.5185533391497151,
+        "n": 25
+      },
+      {
+        "curve_id": "CdSe_Nd1e+19",
+        "material": "CdSe",
+        "sse": 0.04653622243412502,
+        "n": 25
+      },
+      {
+        "curve_id": "Ge_Nd0e+00",
+        "material": "Ge",
+        "sse": 21.21931910343203,
+        "n": 23
+      },
+      {
+        "curve_id": "Ge_Nd1e+17",
+        "material": "Ge",
+        "sse": 3.742372765421941,
+        "n": 25
+      },
+      {
+        "curve_id": "Ge_Nd1e+19",
+        "material": "Ge",
+        "sse": 0.2608724154976855,
+        "n": 25
+      },
+      {
+        "curve_id": "PbTe_Nd0e+00",
+        "material": "PbTe",
+        "sse": 32.989746982426,
+        "n": 25
+      },
+      {
+        "curve_id": "PbTe_Nd1e+17",
+        "material": "PbTe",
+        "sse": 2.358732932431118,
+        "n": 25
+      },
+      {
+        "curve_id": "PbTe_Nd1e+19",
+        "material": "PbTe",
+        "sse": 0.4382831757133926,
+        "n": 25
+      }
+    ],
+    "Gradient-Boosted Trees": [
+      {
+        "curve_id": "CdSe_Nd0e+00",
+        "material": "CdSe",
+        "sse": 9.56324737611353,
+        "n": 15
+      },
+      {
+        "curve_id": "CdSe_Nd1e+17",
+        "material": "CdSe",
+        "sse": 0.7037453133088558,
+        "n": 25
+      },
+      {
+        "curve_id": "CdSe_Nd1e+19",
+        "material": "CdSe",
+        "sse": 0.12665923673000606,
+        "n": 25
+      },
+      {
+        "curve_id": "Ge_Nd0e+00",
+        "material": "Ge",
+        "sse": 10.023912405009302,
+        "n": 23
+      },
+      {
+        "curve_id": "Ge_Nd1e+17",
+        "material": "Ge",
+        "sse": 3.1233006758163606,
+        "n": 25
+      },
+      {
+        "curve_id": "Ge_Nd1e+19",
+        "material": "Ge",
+        "sse": 0.17781828771488292,
+        "n": 25
+      },
+      {
+        "curve_id": "PbTe_Nd0e+00",
+        "material": "PbTe",
+        "sse": 13.722525410438621,
+        "n": 25
+      },
+      {
+        "curve_id": "PbTe_Nd1e+17",
+        "material": "PbTe",
+        "sse": 2.9068467154192903,
+        "n": 25
+      },
+      {
+        "curve_id": "PbTe_Nd1e+19",
+        "material": "PbTe",
+        "sse": 0.8030827105143472,
+        "n": 25
+      }
+    ],
+    "Ensemble (simple average)": [
+      {
+        "curve_id": "CdSe_Nd0e+00",
+        "material": "CdSe",
+        "sse": 4.4916125010680386,
+        "n": 15
+      },
+      {
+        "curve_id": "CdSe_Nd1e+17",
+        "material": "CdSe",
+        "sse": 2.213578142613395,
+        "n": 25
+      },
+      {
+        "curve_id": "CdSe_Nd1e+19",
+        "material": "CdSe",
+        "sse": 0.37148989406315874,
+        "n": 25
+      },
+      {
+        "curve_id": "Ge_Nd0e+00",
+        "material": "Ge",
+        "sse": 12.433285339968478,
+        "n": 23
+      },
+      {
+        "curve_id": "Ge_Nd1e+17",
+        "material": "Ge",
+        "sse": 0.9182182076848524,
+        "n": 25
+      },
+      {
+        "curve_id": "Ge_Nd1e+19",
+        "material": "Ge",
+        "sse": 0.23990766368451172,
+        "n": 25
+      },
+      {
+        "curve_id": "PbTe_Nd0e+00",
+        "material": "PbTe",
+        "sse": 48.04452268140531,
+        "n": 25
+      },
+      {
+        "curve_id": "PbTe_Nd1e+17",
+        "material": "PbTe",
+        "sse": 9.420087177447796,
+        "n": 25
+      },
+      {
+        "curve_id": "PbTe_Nd1e+19",
+        "material": "PbTe",
+        "sse": 0.28435051653872484,
+        "n": 25
+      }
+    ],
+    "Ensemble (stacked, Ridge)": [
+      {
+        "curve_id": "CdSe_Nd0e+00",
+        "material": "CdSe",
+        "sse": 6.140514819570205,
+        "n": 15
+      },
+      {
+        "curve_id": "CdSe_Nd1e+17",
+        "material": "CdSe",
+        "sse": 1.098151743208482,
+        "n": 25
+      },
+      {
+        "curve_id": "CdSe_Nd1e+19",
+        "material": "CdSe",
+        "sse": 0.2797421267340086,
+        "n": 25
+      },
+      {
+        "curve_id": "Ge_Nd0e+00",
+        "material": "Ge",
+        "sse": 10.284893561775071,
+        "n": 23
+      },
+      {
+        "curve_id": "Ge_Nd1e+17",
+        "material": "Ge",
+        "sse": 1.891504800842917,
+        "n": 25
+      },
+      {
+        "curve_id": "Ge_Nd1e+19",
+        "material": "Ge",
+        "sse": 0.39530079633488885,
+        "n": 25
+      },
+      {
+        "curve_id": "PbTe_Nd0e+00",
+        "material": "PbTe",
+        "sse": 18.51952972914186,
+        "n": 25
+      },
+      {
+        "curve_id": "PbTe_Nd1e+17",
+        "material": "PbTe",
+        "sse": 3.557704326618405,
+        "n": 25
+      },
+      {
+        "curve_id": "PbTe_Nd1e+19",
+        "material": "PbTe",
+        "sse": 0.9323187387164114,
+        "n": 25
+      }
+    ],
+    "Ensemble (weighted by validation RMSE)": [
+      {
+        "curve_id": "CdSe_Nd0e+00",
+        "material": "CdSe",
+        "sse": 2.0785526621483874,
+        "n": 15
+      },
+      {
+        "curve_id": "CdSe_Nd1e+17",
+        "material": "CdSe",
+        "sse": 1.9879680272004034,
+        "n": 25
+      },
+      {
+        "curve_id": "CdSe_Nd1e+19",
+        "material": "CdSe",
+        "sse": 0.2163859902402535,
+        "n": 25
+      },
+      {
+        "curve_id": "Ge_Nd0e+00",
+        "material": "Ge",
+        "sse": 11.299855334964398,
+        "n": 23
+      },
+      {
+        "curve_id": "Ge_Nd1e+17",
+        "material": "Ge",
+        "sse": 0.5533523851427591,
+        "n": 25
+      },
+      {
+        "curve_id": "Ge_Nd1e+19",
+        "material": "Ge",
+        "sse": 0.15984966280467983,
+        "n": 25
+      },
+      {
+        "curve_id": "PbTe_Nd0e+00",
+        "material": "PbTe",
+        "sse": 40.07239600161608,
+        "n": 25
+      },
+      {
+        "curve_id": "PbTe_Nd1e+17",
+        "material": "PbTe",
+        "sse": 7.46313437125839,
+        "n": 25
+      },
+      {
+        "curve_id": "PbTe_Nd1e+19",
+        "material": "PbTe",
+        "sse": 0.31767768152525155,
+        "n": 25
+      }
+    ],
+    "PGML (2-channel) + GBT residual": [
+      {
+        "curve_id": "CdSe_Nd0e+00",
+        "material": "CdSe",
+        "sse": 11.143347144681655,
+        "n": 15
+      },
+      {
+        "curve_id": "CdSe_Nd1e+17",
+        "material": "CdSe",
+        "sse": 0.23812434143759548,
+        "n": 25
+      },
+      {
+        "curve_id": "CdSe_Nd1e+19",
+        "material": "CdSe",
+        "sse": 0.10977823660440675,
+        "n": 25
+      },
+      {
+        "curve_id": "Ge_Nd0e+00",
+        "material": "Ge",
+        "sse": 29.979508907595594,
+        "n": 23
+      },
+      {
+        "curve_id": "Ge_Nd1e+17",
+        "material": "Ge",
+        "sse": 0.7535517774777366,
+        "n": 25
+      },
+      {
+        "curve_id": "Ge_Nd1e+19",
+        "material": "Ge",
+        "sse": 0.11528810273343709,
+        "n": 25
+      },
+      {
+        "curve_id": "PbTe_Nd0e+00",
+        "material": "PbTe",
+        "sse": 70.96331130945904,
+        "n": 25
+      },
+      {
+        "curve_id": "PbTe_Nd1e+17",
+        "material": "PbTe",
+        "sse": 4.560777552686493,
+        "n": 25
+      },
+      {
+        "curve_id": "PbTe_Nd1e+19",
+        "material": "PbTe",
+        "sse": 1.1964579052582986,
+        "n": 25
+      }
+    ]
+  }
+}

@@ -1,0 +1,876 @@
+{
+  "PGML (2-channel)": {
+    "rmse_log10": 1.02910563479781,
+    "r2": 0.7229453715948958,
+    "consistency_violation": 0.0,
+    "n_checkable_curves": 3,
+    "extrapolation_rmse": 1.5196578480083183
+  },
+  "PGML (2-channel + RCN)": {
+    "rmse_log10": 0.9586526420097977,
+    "r2": 0.7595814107305406,
+    "consistency_violation": 0.0,
+    "n_checkable_curves": 3,
+    "extrapolation_rmse": 1.509736744096448
+  },
+  "PGML (RCN only, no 2-channel)": {
+    "rmse_log10": 1.0970743380939696,
+    "r2": 0.6851399134784089,
+    "consistency_violation": 0.0,
+    "n_checkable_curves": 3,
+    "extrapolation_rmse": 1.4772687631535708
+  },
+  "PGML (no correction)": {
+    "rmse_log10": 1.0904573380208802,
+    "r2": 0.6889266142430697,
+    "consistency_violation": 0.0,
+    "n_checkable_curves": 3,
+    "extrapolation_rmse": 1.3647278288535651
+  },
+  "Black-box MLP": {
+    "rmse_log10": 0.6614222587430248,
+    "r2": 0.8855533434762543,
+    "consistency_violation": 0.0,
+    "n_checkable_curves": 3,
+    "extrapolation_rmse": 1.6237566818277736
+  },
+  "Residual-only PINN": {
+    "rmse_log10": 0.7018992210323062,
+    "r2": 0.8711171834734451,
+    "consistency_violation": 0.0,
+    "n_checkable_curves": 3,
+    "extrapolation_rmse": 1.2233625548763103
+  },
+  "Random Forest": {
+    "rmse_log10": 0.9006291724923642,
+    "r2": 0.7878038412730691,
+    "consistency_violation": 0.0,
+    "n_checkable_curves": 3,
+    "extrapolation_rmse": 1.1407114057397143
+  },
+  "Gradient-Boosted Trees": {
+    "rmse_log10": 0.7200156588223123,
+    "r2": 0.8643782386042419,
+    "consistency_violation": 0.0,
+    "n_checkable_curves": 3,
+    "extrapolation_rmse": 1.7093603857796695
+  },
+  "PGML (2-channel) + GBT residual": {
+    "rmse_log10": 0.8354117635851559,
+    "r2": 0.8174227463156091,
+    "consistency_violation": NaN,
+    "n_checkable_curves": 0,
+    "extrapolation_rmse": 1.328612670308838
+  },
+  "GBT + physics-parameter features": {
+    "rmse_log10": 0.8857182500318025,
+    "r2": 0.7947719663395301,
+    "consistency_violation": NaN,
+    "n_checkable_curves": 0,
+    "extrapolation_rmse": 1.1644036550380277
+  },
+  "Ensemble (simple average)": {
+    "rmse_log10": 0.7456026437287098,
+    "r2": 0.8545678662773188,
+    "consistency_violation": NaN,
+    "n_checkable_curves": 0,
+    "extrapolation_rmse": 1.1440870923469002
+  },
+  "Ensemble (stacked, Ridge)": {
+    "rmse_log10": 0.865969412661022,
+    "r2": 0.8038218647095892,
+    "consistency_violation": NaN,
+    "n_checkable_curves": 0,
+    "extrapolation_rmse": 1.1737931715735284,
+    "stacked_weights": {
+      "PGML (2-channel)": 0.09542387456232454,
+      "PGML (2-channel + RCN)": 0.0,
+      "PGML (RCN only, no 2-channel)": 0.07137828859065609,
+      "PGML (no correction)": 0.19858907518821786,
+      "Black-box MLP": 0.5645834516704988,
+      "Residual-only PINN": 0.0,
+      "Random Forest": 0.0,
+      "Gradient-Boosted Trees": 0.0
+    },
+    "stacked_weights_extrapolation": {
+      "PGML (2-channel)": 0.0,
+      "PGML (2-channel + RCN)": 0.0,
+      "PGML (RCN only, no 2-channel)": 0.0,
+      "PGML (no correction)": 0.0,
+      "Black-box MLP": 0.4263806627949517,
+      "Residual-only PINN": 0.3675845414696709,
+      "Random Forest": 0.0,
+      "Gradient-Boosted Trees": 0.15219727871043012
+    }
+  },
+  "Ensemble (weighted by validation RMSE)": {
+    "rmse_log10": 0.6954031031031981,
+    "r2": 0.8734917797324326,
+    "consistency_violation": NaN,
+    "n_checkable_curves": 0,
+    "extrapolation_rmse": 1.0480775585513529,
+    "validation_weights": {
+      "PGML (2-channel)": 0.13233971117591253,
+      "PGML (2-channel + RCN)": 0.1067751312568047,
+      "PGML (RCN only, no 2-channel)": 0.08941521423163004,
+      "PGML (no correction)": 0.10310651050767544,
+      "Black-box MLP": 0.21014905697801903,
+      "Residual-only PINN": 0.1736150698209951,
+      "Random Forest": 0.056916386429450745,
+      "Gradient-Boosted Trees": 0.12768291959951242
+    },
+    "validation_weights_extrapolation": {
+      "PGML (2-channel)": 0.06203346439154689,
+      "PGML (2-channel + RCN)": 0.062041595786662955,
+      "PGML (RCN only, no 2-channel)": 0.06049056705661187,
+      "PGML (no correction)": 0.06764132411050965,
+      "Black-box MLP": 0.27166278781106923,
+      "Residual-only PINN": 0.30480004281502604,
+      "Random Forest": 0.07010370613221456,
+      "Gradient-Boosted Trees": 0.10122651189635866
+    }
+  },
+  "Ensemble (10 models, simple average)": {
+    "rmse_log10": 0.7610590662548344,
+    "r2": 0.8484757212959886,
+    "consistency_violation": NaN,
+    "n_checkable_curves": 0,
+    "extrapolation_rmse": 1.1549295466523122
+  },
+  "Ensemble (10 models, stacked Ridge)": {
+    "rmse_log10": 0.8611264939743055,
+    "r2": 0.8060099746019217,
+    "consistency_violation": NaN,
+    "n_checkable_curves": 0,
+    "extrapolation_rmse": 1.1730004367460327,
+    "stacked_weights": {
+      "PGML (2-channel)": 0.09133677923473706,
+      "PGML (2-channel + RCN)": 0.05035244959492137,
+      "PGML (RCN only, no 2-channel)": 0.08401185159404446,
+      "PGML (no correction)": 0.11324160505764924,
+      "Black-box MLP": 0.33420221452233945,
+      "Residual-only PINN": 0.21111376796216458,
+      "Random Forest": 0.0,
+      "Gradient-Boosted Trees": 0.0018053187250350582,
+      "PGML (2-channel) + GBT residual": 0.04557067132919279,
+      "GBT + physics-parameter features": 0.0
+    },
+    "stacked_weights_extrapolation": {
+      "PGML (2-channel)": 0.0,
+      "PGML (2-channel + RCN)": 0.0,
+      "PGML (RCN only, no 2-channel)": 0.0,
+      "PGML (no correction)": 0.0,
+      "Black-box MLP": 0.4255206144626917,
+      "Residual-only PINN": 0.3683198424747987,
+      "Random Forest": 0.0,
+      "Gradient-Boosted Trees": 0.15250705589798538,
+      "PGML (2-channel) + GBT residual": 0.0,
+      "GBT + physics-parameter features": 0.0
+    }
+  },
+  "Ensemble (10 models, weighted by validation RMSE)": {
+    "rmse_log10": 0.7161632996760441,
+    "r2": 0.8658256127999752,
+    "consistency_violation": NaN,
+    "n_checkable_curves": 0,
+    "extrapolation_rmse": 1.053101524829484,
+    "validation_weights": {
+      "PGML (2-channel)": 0.11018394100892656,
+      "PGML (2-channel + RCN)": 0.08889927791954799,
+      "PGML (RCN only, no 2-channel)": 0.07444568680599979,
+      "PGML (no correction)": 0.08584484256817512,
+      "Black-box MLP": 0.17496676614601908,
+      "Residual-only PINN": 0.14454914886423761,
+      "Random Forest": 0.047387679095413644,
+      "Gradient-Boosted Trees": 0.10630677032610035,
+      "PGML (2-channel) + GBT residual": 0.06950037983195786,
+      "GBT + physics-parameter features": 0.09791550743362194
+    },
+    "validation_weights_extrapolation": {
+      "PGML (2-channel)": 0.055964060088459,
+      "PGML (2-channel + RCN)": 0.0559713959013036,
+      "PGML (RCN only, no 2-channel)": 0.054572121076031495,
+      "PGML (no correction)": 0.06102324227920001,
+      "Black-box MLP": 0.24508308104308746,
+      "Residual-only PINN": 0.2749781602297455,
+      "Random Forest": 0.06324470285334478,
+      "Gradient-Boosted Trees": 0.0913224281422671,
+      "PGML (2-channel) + GBT residual": 0.0600634257299876,
+      "GBT + physics-parameter features": 0.037777382656573315
+    }
+  },
+  "_per_curve_rmse": {
+    "PGML (2-channel)": [
+      {
+        "curve_id": "GaSb_Nd0e+00",
+        "material": "GaSb",
+        "sse": 107.91164738088835,
+        "n": 22
+      },
+      {
+        "curve_id": "GaSb_Nd1e+17",
+        "material": "GaSb",
+        "sse": 0.8267128636456207,
+        "n": 25
+      },
+      {
+        "curve_id": "GaSb_Nd1e+19",
+        "material": "GaSb",
+        "sse": 0.6126579986715193,
+        "n": 25
+      },
+      {
+        "curve_id": "InAs_Nd0e+00",
+        "material": "InAs",
+        "sse": 80.39699960015616,
+        "n": 25
+      },
+      {
+        "curve_id": "InAs_Nd1e+17",
+        "material": "InAs",
+        "sse": 0.8093319835932461,
+        "n": 25
+      },
+      {
+        "curve_id": "InAs_Nd1e+19",
+        "material": "InAs",
+        "sse": 3.2457818970188193,
+        "n": 25
+      },
+      {
+        "curve_id": "ZnO_Nd0e+00",
+        "material": "ZnO",
+        "sse": 1.5530911925005122,
+        "n": 3
+      },
+      {
+        "curve_id": "ZnO_Nd1e+17",
+        "material": "ZnO",
+        "sse": 7.4844323762602745,
+        "n": 25
+      },
+      {
+        "curve_id": "ZnO_Nd1e+19",
+        "material": "ZnO",
+        "sse": 8.97102622178619,
+        "n": 25
+      }
+    ],
+    "PGML (2-channel + RCN)": [
+      {
+        "curve_id": "GaSb_Nd0e+00",
+        "material": "GaSb",
+        "sse": 88.8665324482054,
+        "n": 22
+      },
+      {
+        "curve_id": "GaSb_Nd1e+17",
+        "material": "GaSb",
+        "sse": 0.6763458805292109,
+        "n": 25
+      },
+      {
+        "curve_id": "GaSb_Nd1e+19",
+        "material": "GaSb",
+        "sse": 0.5759128312275099,
+        "n": 25
+      },
+      {
+        "curve_id": "InAs_Nd0e+00",
+        "material": "InAs",
+        "sse": 70.41429624618246,
+        "n": 25
+      },
+      {
+        "curve_id": "InAs_Nd1e+17",
+        "material": "InAs",
+        "sse": 0.8447732067187318,
+        "n": 25
+      },
+      {
+        "curve_id": "InAs_Nd1e+19",
+        "material": "InAs",
+        "sse": 3.009271497036666,
+        "n": 25
+      },
+      {
+        "curve_id": "ZnO_Nd0e+00",
+        "material": "ZnO",
+        "sse": 1.54973430527703,
+        "n": 3
+      },
+      {
+        "curve_id": "ZnO_Nd1e+17",
+        "material": "ZnO",
+        "sse": 8.143131912447522,
+        "n": 25
+      },
+      {
+        "curve_id": "ZnO_Nd1e+19",
+        "material": "ZnO",
+        "sse": 9.722979278848566,
+        "n": 25
+      }
+    ],
+    "PGML (RCN only, no 2-channel)": [
+      {
+        "curve_id": "GaSb_Nd0e+00",
+        "material": "GaSb",
+        "sse": 130.68211805761004,
+        "n": 22
+      },
+      {
+        "curve_id": "GaSb_Nd1e+17",
+        "material": "GaSb",
+        "sse": 1.1287984371535653,
+        "n": 25
+      },
+      {
+        "curve_id": "GaSb_Nd1e+19",
+        "material": "GaSb",
+        "sse": 0.4347726498489295,
+        "n": 25
+      },
+      {
+        "curve_id": "InAs_Nd0e+00",
+        "material": "InAs",
+        "sse": 92.44149963625067,
+        "n": 25
+      },
+      {
+        "curve_id": "InAs_Nd1e+17",
+        "material": "InAs",
+        "sse": 1.0925916160949483,
+        "n": 25
+      },
+      {
+        "curve_id": "InAs_Nd1e+19",
+        "material": "InAs",
+        "sse": 3.7646747409354067,
+        "n": 25
+      },
+      {
+        "curve_id": "ZnO_Nd0e+00",
+        "material": "ZnO",
+        "sse": 2.2143980071216793,
+        "n": 3
+      },
+      {
+        "curve_id": "ZnO_Nd1e+17",
+        "material": "ZnO",
+        "sse": 6.080008936906928,
+        "n": 25
+      },
+      {
+        "curve_id": "ZnO_Nd1e+19",
+        "material": "ZnO",
+        "sse": 2.875558578942154,
+        "n": 25
+      }
+    ],
+    "PGML (no correction)": [
+      {
+        "curve_id": "GaSb_Nd0e+00",
+        "material": "GaSb",
+        "sse": 123.06009878603324,
+        "n": 22
+      },
+      {
+        "curve_id": "GaSb_Nd1e+17",
+        "material": "GaSb",
+        "sse": 1.3912690126050915,
+        "n": 25
+      },
+      {
+        "curve_id": "GaSb_Nd1e+19",
+        "material": "GaSb",
+        "sse": 0.3970057837159061,
+        "n": 25
+      },
+      {
+        "curve_id": "InAs_Nd0e+00",
+        "material": "InAs",
+        "sse": 96.17305127528361,
+        "n": 25
+      },
+      {
+        "curve_id": "InAs_Nd1e+17",
+        "material": "InAs",
+        "sse": 1.235519283875829,
+        "n": 25
+      },
+      {
+        "curve_id": "InAs_Nd1e+19",
+        "material": "InAs",
+        "sse": 3.415393867450754,
+        "n": 25
+      },
+      {
+        "curve_id": "ZnO_Nd0e+00",
+        "material": "ZnO",
+        "sse": 2.516196206391293,
+        "n": 3
+      },
+      {
+        "curve_id": "ZnO_Nd1e+17",
+        "material": "ZnO",
+        "sse": 6.125009566317953,
+        "n": 25
+      },
+      {
+        "curve_id": "ZnO_Nd1e+19",
+        "material": "ZnO",
+        "sse": 3.5058974270431906,
+        "n": 25
+      }
+    ],
+    "Black-box MLP": [
+      {
+        "curve_id": "GaSb_Nd0e+00",
+        "material": "GaSb",
+        "sse": 23.190770132179026,
+        "n": 22
+      },
+      {
+        "curve_id": "GaSb_Nd1e+17",
+        "material": "GaSb",
+        "sse": 1.2521620502063076,
+        "n": 25
+      },
+      {
+        "curve_id": "GaSb_Nd1e+19",
+        "material": "GaSb",
+        "sse": 0.5807695176743558,
+        "n": 25
+      },
+      {
+        "curve_id": "InAs_Nd0e+00",
+        "material": "InAs",
+        "sse": 31.954917424184735,
+        "n": 25
+      },
+      {
+        "curve_id": "InAs_Nd1e+17",
+        "material": "InAs",
+        "sse": 5.35767831347036,
+        "n": 25
+      },
+      {
+        "curve_id": "InAs_Nd1e+19",
+        "material": "InAs",
+        "sse": 3.516903334908579,
+        "n": 25
+      },
+      {
+        "curve_id": "ZnO_Nd0e+00",
+        "material": "ZnO",
+        "sse": 11.693064113100121,
+        "n": 3
+      },
+      {
+        "curve_id": "ZnO_Nd1e+17",
+        "material": "ZnO",
+        "sse": 6.0287287790194695,
+        "n": 25
+      },
+      {
+        "curve_id": "ZnO_Nd1e+19",
+        "material": "ZnO",
+        "sse": 3.920887207402028,
+        "n": 25
+      }
+    ],
+    "Residual-only PINN": [
+      {
+        "curve_id": "GaSb_Nd0e+00",
+        "material": "GaSb",
+        "sse": 22.90132010347239,
+        "n": 22
+      },
+      {
+        "curve_id": "GaSb_Nd1e+17",
+        "material": "GaSb",
+        "sse": 0.99651186573616,
+        "n": 25
+      },
+      {
+        "curve_id": "GaSb_Nd1e+19",
+        "material": "GaSb",
+        "sse": 0.4621956284757354,
+        "n": 25
+      },
+      {
+        "curve_id": "InAs_Nd0e+00",
+        "material": "InAs",
+        "sse": 40.10013548096494,
+        "n": 25
+      },
+      {
+        "curve_id": "InAs_Nd1e+17",
+        "material": "InAs",
+        "sse": 5.451940785865717,
+        "n": 25
+      },
+      {
+        "curve_id": "InAs_Nd1e+19",
+        "material": "InAs",
+        "sse": 3.845698519392877,
+        "n": 25
+      },
+      {
+        "curve_id": "ZnO_Nd0e+00",
+        "material": "ZnO",
+        "sse": 9.729395820389318,
+        "n": 3
+      },
+      {
+        "curve_id": "ZnO_Nd1e+17",
+        "material": "ZnO",
+        "sse": 6.662681115140399,
+        "n": 25
+      },
+      {
+        "curve_id": "ZnO_Nd1e+19",
+        "material": "ZnO",
+        "sse": 8.382623977714077,
+        "n": 25
+      }
+    ],
+    "Random Forest": [
+      {
+        "curve_id": "GaSb_Nd0e+00",
+        "material": "GaSb",
+        "sse": 111.84367362890819,
+        "n": 22
+      },
+      {
+        "curve_id": "GaSb_Nd1e+17",
+        "material": "GaSb",
+        "sse": 3.198214118636433,
+        "n": 25
+      },
+      {
+        "curve_id": "GaSb_Nd1e+19",
+        "material": "GaSb",
+        "sse": 0.7035254198559155,
+        "n": 25
+      },
+      {
+        "curve_id": "InAs_Nd0e+00",
+        "material": "InAs",
+        "sse": 42.936858982732126,
+        "n": 25
+      },
+      {
+        "curve_id": "InAs_Nd1e+17",
+        "material": "InAs",
+        "sse": 0.2089512007066178,
+        "n": 25
+      },
+      {
+        "curve_id": "InAs_Nd1e+19",
+        "material": "InAs",
+        "sse": 0.09108259295414298,
+        "n": 25
+      },
+      {
+        "curve_id": "ZnO_Nd0e+00",
+        "material": "ZnO",
+        "sse": 1.5307720241677432,
+        "n": 3
+      },
+      {
+        "curve_id": "ZnO_Nd1e+17",
+        "material": "ZnO",
+        "sse": 1.6788538215579922,
+        "n": 25
+      },
+      {
+        "curve_id": "ZnO_Nd1e+19",
+        "material": "ZnO",
+        "sse": 0.03464947933697563,
+        "n": 25
+      }
+    ],
+    "Gradient-Boosted Trees": [
+      {
+        "curve_id": "GaSb_Nd0e+00",
+        "material": "GaSb",
+        "sse": 10.968663108172404,
+        "n": 22
+      },
+      {
+        "curve_id": "GaSb_Nd1e+17",
+        "material": "GaSb",
+        "sse": 3.3543469706475824,
+        "n": 25
+      },
+      {
+        "curve_id": "GaSb_Nd1e+19",
+        "material": "GaSb",
+        "sse": 2.644900042033264,
+        "n": 25
+      },
+      {
+        "curve_id": "InAs_Nd0e+00",
+        "material": "InAs",
+        "sse": 70.95794747840651,
+        "n": 25
+      },
+      {
+        "curve_id": "InAs_Nd1e+17",
+        "material": "InAs",
+        "sse": 10.370371171693764,
+        "n": 25
+      },
+      {
+        "curve_id": "InAs_Nd1e+19",
+        "material": "InAs",
+        "sse": 1.4951626726691605,
+        "n": 25
+      },
+      {
+        "curve_id": "ZnO_Nd0e+00",
+        "material": "ZnO",
+        "sse": 1.7783358431302498,
+        "n": 3
+      },
+      {
+        "curve_id": "ZnO_Nd1e+17",
+        "material": "ZnO",
+        "sse": 1.746338866222912,
+        "n": 25
+      },
+      {
+        "curve_id": "ZnO_Nd1e+19",
+        "material": "ZnO",
+        "sse": 0.36844363688985665,
+        "n": 25
+      }
+    ],
+    "Ensemble (simple average)": [
+      {
+        "curve_id": "GaSb_Nd0e+00",
+        "material": "GaSb",
+        "sse": 61.406816586013235,
+        "n": 22
+      },
+      {
+        "curve_id": "GaSb_Nd1e+17",
+        "material": "GaSb",
+        "sse": 0.5399727436762242,
+        "n": 25
+      },
+      {
+        "curve_id": "GaSb_Nd1e+19",
+        "material": "GaSb",
+        "sse": 0.2054674221791326,
+        "n": 25
+      },
+      {
+        "curve_id": "InAs_Nd0e+00",
+        "material": "InAs",
+        "sse": 43.72384353309512,
+        "n": 25
+      },
+      {
+        "curve_id": "InAs_Nd1e+17",
+        "material": "InAs",
+        "sse": 0.45631210837497893,
+        "n": 25
+      },
+      {
+        "curve_id": "InAs_Nd1e+19",
+        "material": "InAs",
+        "sse": 1.669705229309455,
+        "n": 25
+      },
+      {
+        "curve_id": "ZnO_Nd0e+00",
+        "material": "ZnO",
+        "sse": 0.4769850726771421,
+        "n": 3
+      },
+      {
+        "curve_id": "ZnO_Nd1e+17",
+        "material": "ZnO",
+        "sse": 2.4907590423882167,
+        "n": 25
+      },
+      {
+        "curve_id": "ZnO_Nd1e+19",
+        "material": "ZnO",
+        "sse": 0.21479872933472755,
+        "n": 25
+      }
+    ],
+    "Ensemble (stacked, Ridge)": [
+      {
+        "curve_id": "GaSb_Nd0e+00",
+        "material": "GaSb",
+        "sse": 66.17832236673486,
+        "n": 22
+      },
+      {
+        "curve_id": "GaSb_Nd1e+17",
+        "material": "GaSb",
+        "sse": 1.6171958785561236,
+        "n": 25
+      },
+      {
+        "curve_id": "GaSb_Nd1e+19",
+        "material": "GaSb",
+        "sse": 0.6204775072421286,
+        "n": 25
+      },
+      {
+        "curve_id": "InAs_Nd0e+00",
+        "material": "InAs",
+        "sse": 57.81440100790439,
+        "n": 25
+      },
+      {
+        "curve_id": "InAs_Nd1e+17",
+        "material": "InAs",
+        "sse": 3.4786343364225196,
+        "n": 25
+      },
+      {
+        "curve_id": "InAs_Nd1e+19",
+        "material": "InAs",
+        "sse": 3.2724462181919862,
+        "n": 25
+      },
+      {
+        "curve_id": "ZnO_Nd0e+00",
+        "material": "ZnO",
+        "sse": 7.977650386413297,
+        "n": 3
+      },
+      {
+        "curve_id": "ZnO_Nd1e+17",
+        "material": "ZnO",
+        "sse": 8.672042979230994,
+        "n": 25
+      },
+      {
+        "curve_id": "ZnO_Nd1e+19",
+        "material": "ZnO",
+        "sse": 0.3494340521988071,
+        "n": 25
+      }
+    ],
+    "Ensemble (weighted by validation RMSE)": [
+      {
+        "curve_id": "GaSb_Nd0e+00",
+        "material": "GaSb",
+        "sse": 49.01972624131729,
+        "n": 22
+      },
+      {
+        "curve_id": "GaSb_Nd1e+17",
+        "material": "GaSb",
+        "sse": 0.6307463501767339,
+        "n": 25
+      },
+      {
+        "curve_id": "GaSb_Nd1e+19",
+        "material": "GaSb",
+        "sse": 0.3148693779861693,
+        "n": 25
+      },
+      {
+        "curve_id": "InAs_Nd0e+00",
+        "material": "InAs",
+        "sse": 39.37632992664667,
+        "n": 25
+      },
+      {
+        "curve_id": "InAs_Nd1e+17",
+        "material": "InAs",
+        "sse": 0.8218921046881272,
+        "n": 25
+      },
+      {
+        "curve_id": "InAs_Nd1e+19",
+        "material": "InAs",
+        "sse": 1.961667600950553,
+        "n": 25
+      },
+      {
+        "curve_id": "ZnO_Nd0e+00",
+        "material": "ZnO",
+        "sse": 1.1169419061053256,
+        "n": 3
+      },
+      {
+        "curve_id": "ZnO_Nd1e+17",
+        "material": "ZnO",
+        "sse": 3.2888351978917814,
+        "n": 25
+      },
+      {
+        "curve_id": "ZnO_Nd1e+19",
+        "material": "ZnO",
+        "sse": 0.1860864553487504,
+        "n": 25
+      }
+    ],
+    "PGML (2-channel) + GBT residual": [
+      {
+        "curve_id": "GaSb_Nd0e+00",
+        "material": "GaSb",
+        "sse": 76.23360750435364,
+        "n": 22
+      },
+      {
+        "curve_id": "GaSb_Nd1e+17",
+        "material": "GaSb",
+        "sse": 2.4843617057932934,
+        "n": 25
+      },
+      {
+        "curve_id": "GaSb_Nd1e+19",
+        "material": "GaSb",
+        "sse": 0.4197739034357036,
+        "n": 25
+      },
+      {
+        "curve_id": "InAs_Nd0e+00",
+        "material": "InAs",
+        "sse": 41.16314495385121,
+        "n": 25
+      },
+      {
+        "curve_id": "InAs_Nd1e+17",
+        "material": "InAs",
+        "sse": 1.766352012415056,
+        "n": 25
+      },
+      {
+        "curve_id": "InAs_Nd1e+19",
+        "material": "InAs",
+        "sse": 1.4908728268071259,
+        "n": 25
+      },
+      {
+        "curve_id": "ZnO_Nd0e+00",
+        "material": "ZnO",
+        "sse": 1.6198494825566447,
+        "n": 3
+      },
+      {
+        "curve_id": "ZnO_Nd1e+17",
+        "material": "ZnO",
+        "sse": 8.541839950533433,
+        "n": 25
+      },
+      {
+        "curve_id": "ZnO_Nd1e+19",
+        "material": "ZnO",
+        "sse": 5.862760607546005,
+        "n": 25
+      }
+    ]
+  }
+}

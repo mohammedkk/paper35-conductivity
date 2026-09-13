@@ -1,0 +1,804 @@
+{
+  "PGML (2-channel)": {
+    "rmse_log10": 1.1893793695698776,
+    "r2": 0.6044274003983382,
+    "consistency_violation": 0.0,
+    "n_checkable_curves": 3,
+    "extrapolation_rmse": 1.3482113702277256
+  },
+  "PGML (2-channel + RCN)": {
+    "rmse_log10": 1.0551155731383874,
+    "r2": 0.6886954521630818,
+    "consistency_violation": 0.0,
+    "n_checkable_curves": 3,
+    "extrapolation_rmse": 1.3702162060097816
+  },
+  "PGML (RCN only, no 2-channel)": {
+    "rmse_log10": 1.3470418249351293,
+    "r2": 0.49260339131780206,
+    "consistency_violation": 0.0,
+    "n_checkable_curves": 3,
+    "extrapolation_rmse": 1.173370743913962
+  },
+  "PGML (no correction)": {
+    "rmse_log10": 1.3304608955531583,
+    "r2": 0.5050177471531233,
+    "consistency_violation": 0.0,
+    "n_checkable_curves": 3,
+    "extrapolation_rmse": 1.1625401622975513
+  },
+  "Black-box MLP": {
+    "rmse_log10": 1.8563341626640966,
+    "r2": 0.03639795396864187,
+    "consistency_violation": 0.0,
+    "n_checkable_curves": 3,
+    "extrapolation_rmse": 1.4132361592821
+  },
+  "Residual-only PINN": {
+    "rmse_log10": 1.334466713942393,
+    "r2": 0.502032625248614,
+    "consistency_violation": 0.0,
+    "n_checkable_curves": 3,
+    "extrapolation_rmse": 1.3912045039584184
+  },
+  "Random Forest": {
+    "rmse_log10": 0.5822598352043451,
+    "r2": 0.9051976582096525,
+    "consistency_violation": 0.0,
+    "n_checkable_curves": 3,
+    "extrapolation_rmse": 0.7717448641423761
+  },
+  "Gradient-Boosted Trees": {
+    "rmse_log10": 0.6171798960725304,
+    "r2": 0.8934854489884447,
+    "consistency_violation": 0.3333333333333333,
+    "n_checkable_curves": 3,
+    "extrapolation_rmse": 0.6870271415794512
+  },
+  "PGML (2-channel) + GBT residual": {
+    "rmse_log10": 1.204618578230151,
+    "r2": 0.5942257229414802,
+    "consistency_violation": NaN,
+    "n_checkable_curves": 0,
+    "extrapolation_rmse": 1.2730468946891673
+  },
+  "GBT + physics-parameter features": {
+    "rmse_log10": 0.657118243620091,
+    "r2": 0.8792540845547494,
+    "consistency_violation": NaN,
+    "n_checkable_curves": 0,
+    "extrapolation_rmse": 1.3449441726773725
+  },
+  "Ensemble (simple average)": {
+    "rmse_log10": 0.9424299537564369,
+    "r2": 0.7516389076901601,
+    "consistency_violation": NaN,
+    "n_checkable_curves": 0,
+    "extrapolation_rmse": 1.0227727253599324
+  },
+  "Ensemble (stacked, Ridge)": {
+    "rmse_log10": 0.8212481028511558,
+    "r2": 0.8114032703061335,
+    "consistency_violation": NaN,
+    "n_checkable_curves": 0,
+    "extrapolation_rmse": 0.8347263632872448,
+    "stacked_weights": {
+      "PGML (2-channel)": 0.2216370604067614,
+      "PGML (2-channel + RCN)": 0.1899524524122238,
+      "PGML (RCN only, no 2-channel)": 0.0,
+      "PGML (no correction)": 0.0,
+      "Black-box MLP": 0.18004832595066173,
+      "Residual-only PINN": 0.0,
+      "Random Forest": 0.0,
+      "Gradient-Boosted Trees": 0.4052027006955145
+    },
+    "stacked_weights_extrapolation": {
+      "PGML (2-channel)": 0.03093871079753398,
+      "PGML (2-channel + RCN)": 0.032256761956080675,
+      "PGML (RCN only, no 2-channel)": 0.0017338739858924809,
+      "PGML (no correction)": 0.10318978512566132,
+      "Black-box MLP": 0.09885713132474559,
+      "Residual-only PINN": 0.0,
+      "Random Forest": 0.5102400225422773,
+      "Gradient-Boosted Trees": 0.3110693193370703
+    }
+  },
+  "Ensemble (weighted by validation RMSE)": {
+    "rmse_log10": 0.9316896684889715,
+    "r2": 0.7572674835469152,
+    "consistency_violation": NaN,
+    "n_checkable_curves": 0,
+    "extrapolation_rmse": 1.0146389268799314,
+    "validation_weights": {
+      "PGML (2-channel)": 0.16349353295188104,
+      "PGML (2-channel + RCN)": 0.17513075332097727,
+      "PGML (RCN only, no 2-channel)": 0.12391640217881843,
+      "PGML (no correction)": 0.12287272699615548,
+      "Black-box MLP": 0.0861952036814098,
+      "Residual-only PINN": 0.07722897637671458,
+      "Random Forest": 0.08573990065549252,
+      "Gradient-Boosted Trees": 0.16542250383855084
+    },
+    "validation_weights_extrapolation": {
+      "PGML (2-channel)": 0.1421783468801072,
+      "PGML (2-channel + RCN)": 0.140508014382012,
+      "PGML (RCN only, no 2-channel)": 0.1404036654267879,
+      "PGML (no correction)": 0.14664077396877703,
+      "Black-box MLP": 0.08359520752582408,
+      "Residual-only PINN": 0.08777153299316387,
+      "Random Forest": 0.10001301857616528,
+      "Gradient-Boosted Trees": 0.15888944024716262
+    }
+  },
+  "Ensemble (10 models, simple average)": {
+    "rmse_log10": 0.9128067900449905,
+    "r2": 0.7670068660419223,
+    "consistency_violation": NaN,
+    "n_checkable_curves": 0,
+    "extrapolation_rmse": 1.0321991707718559
+  },
+  "Ensemble (10 models, stacked Ridge)": {
+    "rmse_log10": 0.8407010976951514,
+    "r2": 0.8023628293173397,
+    "consistency_violation": NaN,
+    "n_checkable_curves": 0,
+    "extrapolation_rmse": 0.839396950629318,
+    "stacked_weights": {
+      "PGML (2-channel)": 0.16699790826614427,
+      "PGML (2-channel + RCN)": 0.14783316250508077,
+      "PGML (RCN only, no 2-channel)": 0.0,
+      "PGML (no correction)": 0.0,
+      "Black-box MLP": 0.16307667897092185,
+      "Residual-only PINN": 0.010887133589217217,
+      "Random Forest": 0.04383876275949271,
+      "Gradient-Boosted Trees": 0.33076577079074804,
+      "PGML (2-channel) + GBT residual": 0.13215176489586525,
+      "GBT + physics-parameter features": 0.0
+    },
+    "stacked_weights_extrapolation": {
+      "PGML (2-channel)": 0.03898999613034635,
+      "PGML (2-channel + RCN)": 0.03878222797885743,
+      "PGML (RCN only, no 2-channel)": 0.015904973263005558,
+      "PGML (no correction)": 0.0957696808694329,
+      "Black-box MLP": 0.07722604836555903,
+      "Residual-only PINN": 0.003605267222292554,
+      "Random Forest": 0.4898191525402267,
+      "Gradient-Boosted Trees": 0.32800858266043864,
+      "PGML (2-channel) + GBT residual": 0.0,
+      "GBT + physics-parameter features": 0.0
+    }
+  },
+  "Ensemble (10 models, weighted by validation RMSE)": {
+    "rmse_log10": 0.927978773493771,
+    "r2": 0.7591972270432761,
+    "consistency_violation": NaN,
+    "n_checkable_curves": 0,
+    "extrapolation_rmse": 1.0285168483204095,
+    "validation_weights": {
+      "PGML (2-channel)": 0.1294313740284246,
+      "PGML (2-channel + RCN)": 0.13864410186572082,
+      "PGML (RCN only, no 2-channel)": 0.09809972241155125,
+      "PGML (no correction)": 0.09727348598193548,
+      "Black-box MLP": 0.06823733909052111,
+      "Residual-only PINN": 0.06113913099051364,
+      "Random Forest": 0.0678768936638441,
+      "Gradient-Boosted Trees": 0.13095846410847067,
+      "PGML (2-channel) + GBT residual": 0.13072916580609384,
+      "GBT + physics-parameter features": 0.07761032205292444
+    },
+    "validation_weights_extrapolation": {
+      "PGML (2-channel)": 0.12482524877052471,
+      "PGML (2-channel + RCN)": 0.123358783066151,
+      "PGML (RCN only, no 2-channel)": 0.12326717007035654,
+      "PGML (no correction)": 0.12874302938681825,
+      "Black-box MLP": 0.07339227670324397,
+      "Residual-only PINN": 0.07705887486566997,
+      "Random Forest": 0.08780626725522614,
+      "Gradient-Boosted Trees": 0.13949672605622676,
+      "PGML (2-channel) + GBT residual": 0.08582987846159726,
+      "GBT + physics-parameter features": 0.036221745364185313
+    }
+  },
+  "_per_curve_rmse": {
+    "PGML (2-channel)": [
+      {
+        "curve_id": "AlAs_Nd0e+00",
+        "material": "AlAs",
+        "sse": 7.45913384528421,
+        "n": 11
+      },
+      {
+        "curve_id": "AlAs_Nd1e+17",
+        "material": "AlAs",
+        "sse": 0.3831235456212173,
+        "n": 25
+      },
+      {
+        "curve_id": "AlAs_Nd1e+19",
+        "material": "AlAs",
+        "sse": 0.38068543468757066,
+        "n": 25
+      },
+      {
+        "curve_id": "Bi2Te3_Nd0e+00",
+        "material": "Bi2Te3",
+        "sse": 37.316289812441774,
+        "n": 25
+      },
+      {
+        "curve_id": "Bi2Te3_Nd1e+17",
+        "material": "Bi2Te3",
+        "sse": 2.2834381142930638,
+        "n": 25
+      },
+      {
+        "curve_id": "Bi2Te3_Nd1e+19",
+        "material": "Bi2Te3",
+        "sse": 1.3858630913140988,
+        "n": 25
+      },
+      {
+        "curve_id": "Diamond_Nd1e+17",
+        "material": "Diamond",
+        "sse": 148.62017743317188,
+        "n": 25
+      },
+      {
+        "curve_id": "Diamond_Nd1e+19",
+        "material": "Diamond",
+        "sse": 65.29121968825596,
+        "n": 25
+      }
+    ],
+    "PGML (2-channel + RCN)": [
+      {
+        "curve_id": "AlAs_Nd0e+00",
+        "material": "AlAs",
+        "sse": 5.025480536462585,
+        "n": 11
+      },
+      {
+        "curve_id": "AlAs_Nd1e+17",
+        "material": "AlAs",
+        "sse": 0.1673578920540909,
+        "n": 25
+      },
+      {
+        "curve_id": "AlAs_Nd1e+19",
+        "material": "AlAs",
+        "sse": 0.5772415728386507,
+        "n": 25
+      },
+      {
+        "curve_id": "Bi2Te3_Nd0e+00",
+        "material": "Bi2Te3",
+        "sse": 40.55176660338234,
+        "n": 25
+      },
+      {
+        "curve_id": "Bi2Te3_Nd1e+17",
+        "material": "Bi2Te3",
+        "sse": 2.0223615701775177,
+        "n": 25
+      },
+      {
+        "curve_id": "Bi2Te3_Nd1e+19",
+        "material": "Bi2Te3",
+        "sse": 1.1955441576036223,
+        "n": 25
+      },
+      {
+        "curve_id": "Diamond_Nd1e+17",
+        "material": "Diamond",
+        "sse": 121.86904416149063,
+        "n": 25
+      },
+      {
+        "curve_id": "Diamond_Nd1e+19",
+        "material": "Diamond",
+        "sse": 35.65921382431209,
+        "n": 25
+      }
+    ],
+    "PGML (RCN only, no 2-channel)": [
+      {
+        "curve_id": "AlAs_Nd0e+00",
+        "material": "AlAs",
+        "sse": 6.300753674170753,
+        "n": 11
+      },
+      {
+        "curve_id": "AlAs_Nd1e+17",
+        "material": "AlAs",
+        "sse": 0.32960625896828455,
+        "n": 25
+      },
+      {
+        "curve_id": "AlAs_Nd1e+19",
+        "material": "AlAs",
+        "sse": 0.4066010314295576,
+        "n": 25
+      },
+      {
+        "curve_id": "Bi2Te3_Nd0e+00",
+        "material": "Bi2Te3",
+        "sse": 53.300508920713625,
+        "n": 25
+      },
+      {
+        "curve_id": "Bi2Te3_Nd1e+17",
+        "material": "Bi2Te3",
+        "sse": 2.4187838512746715,
+        "n": 25
+      },
+      {
+        "curve_id": "Bi2Te3_Nd1e+19",
+        "material": "Bi2Te3",
+        "sse": 0.8628765905039992,
+        "n": 25
+      },
+      {
+        "curve_id": "Diamond_Nd1e+17",
+        "material": "Diamond",
+        "sse": 185.5206912009303,
+        "n": 25
+      },
+      {
+        "curve_id": "Diamond_Nd1e+19",
+        "material": "Diamond",
+        "sse": 88.36121060317767,
+        "n": 25
+      }
+    ],
+    "PGML (no correction)": [
+      {
+        "curve_id": "AlAs_Nd0e+00",
+        "material": "AlAs",
+        "sse": 5.9378179967668,
+        "n": 11
+      },
+      {
+        "curve_id": "AlAs_Nd1e+17",
+        "material": "AlAs",
+        "sse": 0.31394212054374837,
+        "n": 25
+      },
+      {
+        "curve_id": "AlAs_Nd1e+19",
+        "material": "AlAs",
+        "sse": 0.419748208814465,
+        "n": 25
+      },
+      {
+        "curve_id": "Bi2Te3_Nd0e+00",
+        "material": "Bi2Te3",
+        "sse": 51.60827189297654,
+        "n": 25
+      },
+      {
+        "curve_id": "Bi2Te3_Nd1e+17",
+        "material": "Bi2Te3",
+        "sse": 2.256746514907054,
+        "n": 25
+      },
+      {
+        "curve_id": "Bi2Te3_Nd1e+19",
+        "material": "Bi2Te3",
+        "sse": 0.8485182542063674,
+        "n": 25
+      },
+      {
+        "curve_id": "Diamond_Nd1e+17",
+        "material": "Diamond",
+        "sse": 182.24499535972762,
+        "n": 25
+      },
+      {
+        "curve_id": "Diamond_Nd1e+19",
+        "material": "Diamond",
+        "sse": 85.61343184693426,
+        "n": 25
+      }
+    ],
+    "Black-box MLP": [
+      {
+        "curve_id": "AlAs_Nd0e+00",
+        "material": "AlAs",
+        "sse": 17.5553528647544,
+        "n": 11
+      },
+      {
+        "curve_id": "AlAs_Nd1e+17",
+        "material": "AlAs",
+        "sse": 0.5606710442925906,
+        "n": 25
+      },
+      {
+        "curve_id": "AlAs_Nd1e+19",
+        "material": "AlAs",
+        "sse": 1.186829193599888,
+        "n": 25
+      },
+      {
+        "curve_id": "Bi2Te3_Nd0e+00",
+        "material": "Bi2Te3",
+        "sse": 15.844772849906331,
+        "n": 25
+      },
+      {
+        "curve_id": "Bi2Te3_Nd1e+17",
+        "material": "Bi2Te3",
+        "sse": 6.960919746053495,
+        "n": 25
+      },
+      {
+        "curve_id": "Bi2Te3_Nd1e+19",
+        "material": "Bi2Te3",
+        "sse": 0.7988391332395247,
+        "n": 25
+      },
+      {
+        "curve_id": "Diamond_Nd1e+17",
+        "material": "Diamond",
+        "sse": 250.54502309546467,
+        "n": 25
+      },
+      {
+        "curve_id": "Diamond_Nd1e+19",
+        "material": "Diamond",
+        "sse": 347.4992254388182,
+        "n": 25
+      }
+    ],
+    "Residual-only PINN": [
+      {
+        "curve_id": "AlAs_Nd0e+00",
+        "material": "AlAs",
+        "sse": 39.203060914322904,
+        "n": 11
+      },
+      {
+        "curve_id": "AlAs_Nd1e+17",
+        "material": "AlAs",
+        "sse": 0.5075544726563095,
+        "n": 25
+      },
+      {
+        "curve_id": "AlAs_Nd1e+19",
+        "material": "AlAs",
+        "sse": 1.8563152743201268,
+        "n": 25
+      },
+      {
+        "curve_id": "Bi2Te3_Nd0e+00",
+        "material": "Bi2Te3",
+        "sse": 19.907102126188477,
+        "n": 25
+      },
+      {
+        "curve_id": "Bi2Te3_Nd1e+17",
+        "material": "Bi2Te3",
+        "sse": 7.826729308914069,
+        "n": 25
+      },
+      {
+        "curve_id": "Bi2Te3_Nd1e+19",
+        "material": "Bi2Te3",
+        "sse": 0.9163682284125778,
+        "n": 25
+      },
+      {
+        "curve_id": "Diamond_Nd1e+17",
+        "material": "Diamond",
+        "sse": 103.18104631463667,
+        "n": 25
+      },
+      {
+        "curve_id": "Diamond_Nd1e+19",
+        "material": "Diamond",
+        "sse": 157.83088573590766,
+        "n": 25
+      }
+    ],
+    "Random Forest": [
+      {
+        "curve_id": "AlAs_Nd0e+00",
+        "material": "AlAs",
+        "sse": 6.122803843826349,
+        "n": 11
+      },
+      {
+        "curve_id": "AlAs_Nd1e+17",
+        "material": "AlAs",
+        "sse": 21.001582547807914,
+        "n": 25
+      },
+      {
+        "curve_id": "AlAs_Nd1e+19",
+        "material": "AlAs",
+        "sse": 3.080153759064638,
+        "n": 25
+      },
+      {
+        "curve_id": "Bi2Te3_Nd0e+00",
+        "material": "Bi2Te3",
+        "sse": 25.31842069442494,
+        "n": 25
+      },
+      {
+        "curve_id": "Bi2Te3_Nd1e+17",
+        "material": "Bi2Te3",
+        "sse": 5.863204601209837,
+        "n": 25
+      },
+      {
+        "curve_id": "Bi2Te3_Nd1e+19",
+        "material": "Bi2Te3",
+        "sse": 0.6621501330200196,
+        "n": 25
+      },
+      {
+        "curve_id": "Diamond_Nd1e+17",
+        "material": "Diamond",
+        "sse": 0.7349315428870281,
+        "n": 25
+      },
+      {
+        "curve_id": "Diamond_Nd1e+19",
+        "material": "Diamond",
+        "sse": 0.27568479650683014,
+        "n": 25
+      }
+    ],
+    "Gradient-Boosted Trees": [
+      {
+        "curve_id": "AlAs_Nd0e+00",
+        "material": "AlAs",
+        "sse": 5.4938658991897755,
+        "n": 11
+      },
+      {
+        "curve_id": "AlAs_Nd1e+17",
+        "material": "AlAs",
+        "sse": 12.942243989489146,
+        "n": 25
+      },
+      {
+        "curve_id": "AlAs_Nd1e+19",
+        "material": "AlAs",
+        "sse": 2.3345843854614463,
+        "n": 25
+      },
+      {
+        "curve_id": "Bi2Te3_Nd0e+00",
+        "material": "Bi2Te3",
+        "sse": 41.79429712093672,
+        "n": 25
+      },
+      {
+        "curve_id": "Bi2Te3_Nd1e+17",
+        "material": "Bi2Te3",
+        "sse": 6.773709454103598,
+        "n": 25
+      },
+      {
+        "curve_id": "Bi2Te3_Nd1e+19",
+        "material": "Bi2Te3",
+        "sse": 0.8119500168326705,
+        "n": 25
+      },
+      {
+        "curve_id": "Diamond_Nd1e+17",
+        "material": "Diamond",
+        "sse": 0.3104050801723647,
+        "n": 25
+      },
+      {
+        "curve_id": "Diamond_Nd1e+19",
+        "material": "Diamond",
+        "sse": 0.3883945394087905,
+        "n": 25
+      }
+    ],
+    "Ensemble (simple average)": [
+      {
+        "curve_id": "AlAs_Nd0e+00",
+        "material": "AlAs",
+        "sse": 0.9628185217890735,
+        "n": 11
+      },
+      {
+        "curve_id": "AlAs_Nd1e+17",
+        "material": "AlAs",
+        "sse": 1.630050216781769,
+        "n": 25
+      },
+      {
+        "curve_id": "AlAs_Nd1e+19",
+        "material": "AlAs",
+        "sse": 0.24549088354144022,
+        "n": 25
+      },
+      {
+        "curve_id": "Bi2Te3_Nd0e+00",
+        "material": "Bi2Te3",
+        "sse": 33.6515393135651,
+        "n": 25
+      },
+      {
+        "curve_id": "Bi2Te3_Nd1e+17",
+        "material": "Bi2Te3",
+        "sse": 3.61686892907037,
+        "n": 25
+      },
+      {
+        "curve_id": "Bi2Te3_Nd1e+19",
+        "material": "Bi2Te3",
+        "sse": 0.32513396316037735,
+        "n": 25
+      },
+      {
+        "curve_id": "Diamond_Nd1e+17",
+        "material": "Diamond",
+        "sse": 60.526725431048924,
+        "n": 25
+      },
+      {
+        "curve_id": "Diamond_Nd1e+19",
+        "material": "Diamond",
+        "sse": 64.24177724019187,
+        "n": 25
+      }
+    ],
+    "Ensemble (stacked, Ridge)": [
+      {
+        "curve_id": "AlAs_Nd0e+00",
+        "material": "AlAs",
+        "sse": 0.7517076822978733,
+        "n": 11
+      },
+      {
+        "curve_id": "AlAs_Nd1e+17",
+        "material": "AlAs",
+        "sse": 2.586131186755647,
+        "n": 25
+      },
+      {
+        "curve_id": "AlAs_Nd1e+19",
+        "material": "AlAs",
+        "sse": 0.23595413414549143,
+        "n": 25
+      },
+      {
+        "curve_id": "Bi2Te3_Nd0e+00",
+        "material": "Bi2Te3",
+        "sse": 34.57553988228947,
+        "n": 25
+      },
+      {
+        "curve_id": "Bi2Te3_Nd1e+17",
+        "material": "Bi2Te3",
+        "sse": 4.053289979026307,
+        "n": 25
+      },
+      {
+        "curve_id": "Bi2Te3_Nd1e+19",
+        "material": "Bi2Te3",
+        "sse": 0.2591716929806267,
+        "n": 25
+      },
+      {
+        "curve_id": "Diamond_Nd1e+17",
+        "material": "Diamond",
+        "sse": 43.16613753828966,
+        "n": 25
+      },
+      {
+        "curve_id": "Diamond_Nd1e+19",
+        "material": "Diamond",
+        "sse": 39.81947894142674,
+        "n": 25
+      }
+    ],
+    "Ensemble (weighted by validation RMSE)": [
+      {
+        "curve_id": "AlAs_Nd0e+00",
+        "material": "AlAs",
+        "sse": 0.6574021448476117,
+        "n": 11
+      },
+      {
+        "curve_id": "AlAs_Nd1e+17",
+        "material": "AlAs",
+        "sse": 1.593570991901243,
+        "n": 25
+      },
+      {
+        "curve_id": "AlAs_Nd1e+19",
+        "material": "AlAs",
+        "sse": 0.1493644149192641,
+        "n": 25
+      },
+      {
+        "curve_id": "Bi2Te3_Nd0e+00",
+        "material": "Bi2Te3",
+        "sse": 36.46332176035505,
+        "n": 25
+      },
+      {
+        "curve_id": "Bi2Te3_Nd1e+17",
+        "material": "Bi2Te3",
+        "sse": 3.1891625493066895,
+        "n": 25
+      },
+      {
+        "curve_id": "Bi2Te3_Nd1e+19",
+        "material": "Bi2Te3",
+        "sse": 0.3516224534563852,
+        "n": 25
+      },
+      {
+        "curve_id": "Diamond_Nd1e+17",
+        "material": "Diamond",
+        "sse": 66.38964087652728,
+        "n": 25
+      },
+      {
+        "curve_id": "Diamond_Nd1e+19",
+        "material": "Diamond",
+        "sse": 52.662403545337156,
+        "n": 25
+      }
+    ],
+    "PGML (2-channel) + GBT residual": [
+      {
+        "curve_id": "AlAs_Nd0e+00",
+        "material": "AlAs",
+        "sse": 4.304056739888342,
+        "n": 11
+      },
+      {
+        "curve_id": "AlAs_Nd1e+17",
+        "material": "AlAs",
+        "sse": 0.32930062513150354,
+        "n": 25
+      },
+      {
+        "curve_id": "AlAs_Nd1e+19",
+        "material": "AlAs",
+        "sse": 0.5717724740497563,
+        "n": 25
+      },
+      {
+        "curve_id": "Bi2Te3_Nd0e+00",
+        "material": "Bi2Te3",
+        "sse": 50.44905019626671,
+        "n": 25
+      },
+      {
+        "curve_id": "Bi2Te3_Nd1e+17",
+        "material": "Bi2Te3",
+        "sse": 2.0619773189039132,
+        "n": 25
+      },
+      {
+        "curve_id": "Bi2Te3_Nd1e+19",
+        "material": "Bi2Te3",
+        "sse": 1.8968474041032786,
+        "n": 25
+      },
+      {
+        "curve_id": "Diamond_Nd1e+17",
+        "material": "Diamond",
+        "sse": 146.83912526996573,
+        "n": 25
+      },
+      {
+        "curve_id": "Diamond_Nd1e+19",
+        "material": "Diamond",
+        "sse": 63.4535709088956,
+        "n": 25
+      }
+    ]
+  }
+}

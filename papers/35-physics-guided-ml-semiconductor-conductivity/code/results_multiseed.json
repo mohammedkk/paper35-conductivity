@@ -1,0 +1,330 @@
+{
+  "PGML (2-channel)": {
+    "rmse_log10": {
+      "mean": 0.7973691823113394,
+      "std": 0.2875061127497736,
+      "n": 5
+    },
+    "r2": {
+      "mean": 0.8249890653358607,
+      "std": 0.1405712924207332,
+      "n": 5
+    },
+    "consistency_violation": {
+      "mean": 0.0,
+      "std": 0.0,
+      "n": 5
+    },
+    "extrapolation_rmse": {
+      "mean": 1.303841107159675,
+      "std": 0.48732625461546175,
+      "n": 5
+    },
+    "n_checkable_curves_total": 17
+  },
+  "PGML (2-channel + RCN)": {
+    "rmse_log10": {
+      "mean": 0.7689333104994178,
+      "std": 0.22402417405770622,
+      "n": 5
+    },
+    "r2": {
+      "mean": 0.8475403623071476,
+      "std": 0.10739171586399128,
+      "n": 5
+    },
+    "consistency_violation": {
+      "mean": 0.0,
+      "std": 0.0,
+      "n": 5
+    },
+    "extrapolation_rmse": {
+      "mean": 1.6365408409774755,
+      "std": 0.4649514948350593,
+      "n": 5
+    },
+    "n_checkable_curves_total": 17
+  },
+  "PGML (RCN only, no 2-channel)": {
+    "rmse_log10": {
+      "mean": 0.8894843863592419,
+      "std": 0.29207667565601153,
+      "n": 5
+    },
+    "r2": {
+      "mean": 0.7880429379535092,
+      "std": 0.17549467370348454,
+      "n": 5
+    },
+    "consistency_violation": {
+      "mean": 0.0,
+      "std": 0.0,
+      "n": 5
+    },
+    "extrapolation_rmse": {
+      "mean": 1.5492243954222822,
+      "std": 0.5029507837163416,
+      "n": 5
+    },
+    "n_checkable_curves_total": 17
+  },
+  "PGML (no correction)": {
+    "rmse_log10": {
+      "mean": 0.8608881744968357,
+      "std": 0.30444755470488966,
+      "n": 5
+    },
+    "r2": {
+      "mean": 0.7961992697123699,
+      "std": 0.17431088019002233,
+      "n": 5
+    },
+    "consistency_violation": {
+      "mean": 0.0,
+      "std": 0.0,
+      "n": 5
+    },
+    "extrapolation_rmse": {
+      "mean": 1.2527131651649246,
+      "std": 0.46494400716407663,
+      "n": 5
+    },
+    "n_checkable_curves_total": 17
+  },
+  "Black-box MLP": {
+    "rmse_log10": {
+      "mean": 0.8488199816661602,
+      "std": 0.5166417625155137,
+      "n": 5
+    },
+    "r2": {
+      "mean": 0.7481105933543818,
+      "std": 0.35745486957797934,
+      "n": 5
+    },
+    "consistency_violation": {
+      "mean": 0.0,
+      "std": 0.0,
+      "n": 5
+    },
+    "extrapolation_rmse": {
+      "mean": 1.3290747773065046,
+      "std": 0.30860328277855725,
+      "n": 5
+    },
+    "n_checkable_curves_total": 17
+  },
+  "Residual-only PINN": {
+    "rmse_log10": {
+      "mean": 0.7646421557629559,
+      "std": 0.3063306812857147,
+      "n": 5
+    },
+    "r2": {
+      "mean": 0.8358227122905193,
+      "std": 0.17101057296491096,
+      "n": 5
+    },
+    "consistency_violation": {
+      "mean": 0.0,
+      "std": 0.0,
+      "n": 5
+    },
+    "extrapolation_rmse": {
+      "mean": 1.1175838390208443,
+      "std": 0.30602970187906364,
+      "n": 5
+    },
+    "n_checkable_curves_total": 17
+  },
+  "Random Forest": {
+    "rmse_log10": {
+      "mean": 0.7038637908924064,
+      "std": 0.2198317739977861,
+      "n": 5
+    },
+    "r2": {
+      "mean": 0.8909516327508211,
+      "std": 0.061846309109033375,
+      "n": 5
+    },
+    "consistency_violation": {
+      "mean": 0.05,
+      "std": 0.1,
+      "n": 5
+    },
+    "extrapolation_rmse": {
+      "mean": 1.1727190982882136,
+      "std": 0.519917498319862,
+      "n": 5
+    },
+    "n_checkable_curves_total": 17
+  },
+  "Gradient-Boosted Trees": {
+    "rmse_log10": {
+      "mean": 0.6556054408878284,
+      "std": 0.19648585135086882,
+      "n": 5
+    },
+    "r2": {
+      "mean": 0.9085483903856153,
+      "std": 0.04207328997444515,
+      "n": 5
+    },
+    "consistency_violation": {
+      "mean": 0.11666666666666665,
+      "std": 0.14529663145135577,
+      "n": 5
+    },
+    "extrapolation_rmse": {
+      "mean": 1.1660877942803731,
+      "std": 0.42168404558209155,
+      "n": 5
+    },
+    "n_checkable_curves_total": 17
+  },
+  "PGML (2-channel) + GBT residual": {
+    "rmse_log10": {
+      "mean": 0.7470404360364842,
+      "std": 0.2723821726278858,
+      "n": 5
+    },
+    "r2": {
+      "mean": 0.8460641950270229,
+      "std": 0.1372666185959994,
+      "n": 5
+    },
+    "extrapolation_rmse": {
+      "mean": 1.100011624176895,
+      "std": 0.33367232906687405,
+      "n": 5
+    },
+    "n_checkable_curves_total": 0
+  },
+  "GBT + physics-parameter features": {
+    "rmse_log10": {
+      "mean": 0.7746087726218647,
+      "std": 0.2669533057331316,
+      "n": 5
+    },
+    "r2": {
+      "mean": 0.8554531275773668,
+      "std": 0.09471571571632456,
+      "n": 5
+    },
+    "extrapolation_rmse": {
+      "mean": 1.414897085909804,
+      "std": 0.3992024751752366,
+      "n": 5
+    },
+    "n_checkable_curves_total": 0
+  },
+  "Ensemble (simple average)": {
+    "rmse_log10": {
+      "mean": 0.6297627865239083,
+      "std": 0.1969512146474817,
+      "n": 5
+    },
+    "r2": {
+      "mean": 0.8955386977963447,
+      "std": 0.0837179928670415,
+      "n": 5
+    },
+    "extrapolation_rmse": {
+      "mean": 0.9372382498621725,
+      "std": 0.2967048288355396,
+      "n": 5
+    },
+    "n_checkable_curves_total": 0
+  },
+  "Ensemble (stacked, Ridge)": {
+    "rmse_log10": {
+      "mean": 0.6475286683262679,
+      "std": 0.1707575319948811,
+      "n": 5
+    },
+    "r2": {
+      "mean": 0.8952147154479958,
+      "std": 0.0727214048501574,
+      "n": 5
+    },
+    "extrapolation_rmse": {
+      "mean": 1.1209010213382955,
+      "std": 0.3466956549120819,
+      "n": 5
+    },
+    "n_checkable_curves_total": 0
+  },
+  "Ensemble (weighted by validation RMSE)": {
+    "rmse_log10": {
+      "mean": 0.5934538866057879,
+      "std": 0.2024902322017229,
+      "n": 5
+    },
+    "r2": {
+      "mean": 0.9046918116697826,
+      "std": 0.0826261185664391,
+      "n": 5
+    },
+    "extrapolation_rmse": {
+      "mean": 0.822297928463611,
+      "std": 0.2575205923646667,
+      "n": 5
+    },
+    "n_checkable_curves_total": 0
+  },
+  "Ensemble (10 models, simple average)": {
+    "rmse_log10": {
+      "mean": 0.6335798950858055,
+      "std": 0.18919322730019858,
+      "n": 5
+    },
+    "r2": {
+      "mean": 0.8957113878361975,
+      "std": 0.07853474616016341,
+      "n": 5
+    },
+    "extrapolation_rmse": {
+      "mean": 0.9641208957567382,
+      "std": 0.303989267002187,
+      "n": 5
+    },
+    "n_checkable_curves_total": 0
+  },
+  "Ensemble (10 models, stacked Ridge)": {
+    "rmse_log10": {
+      "mean": 0.6451953373457989,
+      "std": 0.17905499385077026,
+      "n": 5
+    },
+    "r2": {
+      "mean": 0.8944933822185293,
+      "std": 0.07501238948381347,
+      "n": 5
+    },
+    "extrapolation_rmse": {
+      "mean": 1.0362055092773912,
+      "std": 0.260308900064183,
+      "n": 5
+    },
+    "n_checkable_curves_total": 0
+  },
+  "Ensemble (10 models, weighted by validation RMSE)": {
+    "rmse_log10": {
+      "mean": 0.6043356576051581,
+      "std": 0.19975759430748752,
+      "n": 5
+    },
+    "r2": {
+      "mean": 0.9021286169367555,
+      "std": 0.08179547615408476,
+      "n": 5
+    },
+    "extrapolation_rmse": {
+      "mean": 0.8335866240112411,
+      "std": 0.2888389292563094,
+      "n": 5
+    },
+    "n_checkable_curves_total": 0
+  }
+}

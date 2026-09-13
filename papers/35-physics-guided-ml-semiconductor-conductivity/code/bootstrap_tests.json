@@ -1,0 +1,79 @@
+{
+  "Ensemble (weighted by validation RMSE) vs Gradient-Boosted Trees": {
+    "n_materials": 12,
+    "a_mean": 0.6235628535602032,
+    "b_mean": 0.683411293871102,
+    "diff_mean": -0.059848440310898754,
+    "bootstrap_diff_mean": -0.05855240469661128,
+    "bootstrap_diff_std": 0.14117751074599327,
+    "ci95_lo": -0.32523484600218633,
+    "ci95_hi": 0.22512932146329143,
+    "p_two_sided": 0.6618
+  },
+  "Ensemble (simple average) vs Gradient-Boosted Trees": {
+    "n_materials": 12,
+    "a_mean": 0.6571840389177912,
+    "b_mean": 0.683411293871102,
+    "diff_mean": -0.026227254953310797,
+    "bootstrap_diff_mean": -0.027183815958615985,
+    "bootstrap_diff_std": 0.14372209815328232,
+    "ci95_lo": -0.29983959394784654,
+    "ci95_hi": 0.2691854951355747,
+    "p_two_sided": 0.8212
+  },
+  "Ensemble (weighted by validation RMSE) vs Ensemble (simple average)": {
+    "n_materials": 12,
+    "a_mean": 0.6235628535602032,
+    "b_mean": 0.6571840389177912,
+    "diff_mean": -0.03362118535758796,
+    "bootstrap_diff_mean": -0.033366909291409265,
+    "bootstrap_diff_std": 0.012298745434516985,
+    "ci95_lo": -0.056690678609348594,
+    "ci95_hi": -0.008267020764175027,
+    "p_two_sided": 0.0078
+  },
+  "Ensemble (weighted by validation RMSE) vs Ensemble (stacked, Ridge)": {
+    "n_materials": 12,
+    "a_mean": 0.6235628535602032,
+    "b_mean": 0.6658984463736709,
+    "diff_mean": -0.04233559281346766,
+    "bootstrap_diff_mean": -0.04574584477610591,
+    "bootstrap_diff_std": 0.05272149059671247,
+    "ci95_lo": -0.1507921501135182,
+    "ci95_hi": 0.05246682816350239,
+    "p_two_sided": 0.3952
+  },
+  "PGML (2-channel) vs PGML (2-channel + RCN)": {
+    "n_materials": 12,
+    "a_mean": 0.8447997273916943,
+    "b_mean": 0.7995198615613771,
+    "diff_mean": 0.04527986583031718,
+    "bootstrap_diff_mean": 0.04344991090958516,
+    "bootstrap_diff_std": 0.03166367813438089,
+    "ci95_lo": -0.011805504485407485,
+    "ci95_hi": 0.1089000314659696,
+    "p_two_sided": 0.1626
+  },
+  "PGML (2-channel) + GBT residual vs Gradient-Boosted Trees": {
+    "n_materials": 12,
+    "a_mean": 0.7908342021306759,
+    "b_mean": 0.683411293871102,
+    "diff_mean": 0.1074229082595739,
+    "bootstrap_diff_mean": 0.10431116682663215,
+    "bootstrap_diff_std": 0.17643820295316193,
+    "ci95_lo": -0.2226236872854397,
+    "ci95_hi": 0.4642900389559679,
+    "p_two_sided": 0.5702
+  },
+  "Gradient-Boosted Trees vs Random Forest": {
+    "n_materials": 12,
+    "a_mean": 0.683411293871102,
+    "b_mean": 0.7396862353489235,
+    "diff_mean": -0.05627494147782153,
+    "bootstrap_diff_mean": -0.05723189030612057,
+    "bootstrap_diff_std": 0.08235560536656521,
+    "ci95_lo": -0.23668562443566177,
+    "ci95_hi": 0.08221698609700681,
+    "p_two_sided": 0.5156
+  }
+}
